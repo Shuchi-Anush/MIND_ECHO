@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+.env
+.env.*
+
+# FastAPI/Uvicorn
+*.log
+
+# VS Code
+.vscode/
+
+# Ollama & Llama
+ollama/
+*.bin
+*.model
+*.gguf
+*.cache/
+
+# React (if used)
+node_modules/
+dist/
+build/
+*.lock
+
+# OS
+.DS_Store
+Thumbs.db
