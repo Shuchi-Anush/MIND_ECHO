@@ -9,16 +9,12 @@ def handle_real_time_voice():
     with mic as source:
         print("Listening...")
         audio = recognizer.listen(source)
-    
     try:
         text = recognizer.recognize_google(audio)
         print("You said:", text)
-
-        # (Optional) Get empathetic response
-        response = "It's okay to feel this way."
+        response = "It's okay to feel this way."  # Placeholder response
         engine.say(response)
         engine.runAndWait()
-
         return {"text": text, "response": response}
     except Exception as e:
         return {"error": str(e)}

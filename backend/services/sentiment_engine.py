@@ -8,9 +8,4 @@ def process_sentiment(text: str):
         "Negative" if scores["compound"] < -0.05 else
         "Neutral"
     )
-    return {
-        "sentiment": {
-            "scores": scores,
-            "label": label
-        }
-    }
+    return {"sentiment": {"scores": scores, "label": label}}
