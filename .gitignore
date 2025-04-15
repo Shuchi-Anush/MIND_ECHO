@@ -11,6 +11,9 @@ build/
 # FastAPI/Uvicorn
 *.log
 
+# Virtual Environment
+venv/
+
 # VS Code
 .vscode/
 
